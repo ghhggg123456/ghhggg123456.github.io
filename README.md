@@ -1,1 +1,1 @@
-hello, it`s my self repo
+it`s my own website ._.

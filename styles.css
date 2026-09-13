@@ -2,12 +2,23 @@ body {
 	height: 100vh;
 	width: 100vw;
 	display: flex;
-	flex-wrap: column;
+	margin: 0px;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	background-color: grey;
+	background-image: url("./images/background.gif");
+}
 
+main {
+	display: flex;
+	flex-wrap: column;	
+}
 p {
 	font-size: 40px;
 	color: white;
+}
+
+span {
+	color: #99ff99; 
 }
