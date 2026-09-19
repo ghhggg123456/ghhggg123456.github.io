@@ -64,6 +64,10 @@ body {
   }
 }
 
+p {
+  color: white;
+}
+
 section {
   background: rgba(0,0,0,0.9);
 }
