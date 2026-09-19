@@ -84,6 +84,7 @@ div.commit {
   margin: 0 0 10px 0;
   padding: 10px;
   width: 90%;
+  border: 1px solid white;
 }
 
 div.info {
