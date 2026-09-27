@@ -12,6 +12,7 @@ body {
 	margin: 0px;
 	padding: 0px;
 	background-color: black;
+	overflow: hidden;
 }
 
 main {
@@ -23,7 +24,7 @@ main {
 	display: flex;
 	flex-direction: row;
 	background-color: black;
-	overflow-y: hidden;
+	overflow: hidden;
 }
 
 #div-computer {

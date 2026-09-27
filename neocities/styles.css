@@ -3,16 +3,13 @@ body {
 	background-position: center center;
 	background-size: cover, 200px, cover;
 	background-blend-mode: overlay;
-}
-
-body {
 	font-size: 2vh;
 	height: 100vh;
 	width: 100vw;
 	padding: 0px;
 	margin: 0px;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	align-items: center;
 	justify-content: center;
 	font-family: 'sans-serif';
@@ -29,13 +26,23 @@ body {
 	height: 96vh;
 }
 
+section#main {
+	justify-content: center;
+	border: 2px solid white;
+}
+
 p {
 	color: white;
+}
+
+img {
+	height: 60vh;
 }
 
 section {
   background: rgba(0,0,0,0.8);
   border: 1px solid white;
+	margin: 10px;
 }
 
 section#commits {
