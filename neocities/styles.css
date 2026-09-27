@@ -1,75 +1,41 @@
 body {
-  background: url('images/background.jpg') center / cover no-repeat #333333;
+	background-image: radial-gradient(at center, rgba(0,0,0,0), gray), url('images/noise.gif'), url('images/background.jpg');
+	background-position: center center;
+	background-size: cover, 200px, cover;
+	background-blend-mode: overlay;
 }
 
-@media (orientation: landscape) {
-  body {
-    height: 100vh;
-    width: 100vw;
-    padding: 0px;
-    margin: 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'sans-serif';
-  }
-  section {
-    display: flex;
-    overflow-y: auto;
-    align-items: center;
-    justify-content: start;
-    flex-direction: column;
-    background-color: blue;
-    height: 96vh;
-  }
-  section#commits {
-    width: 100%;
-    margin: 0px 2vh;
-  }
-  section#main {
-    width: 100%;
-    margin: 0px 0px 0px 2vh;
-  }
+body {
+	font-size: 2vh;
+	height: 100vh;
+	width: 100vw;
+	padding: 0px;
+	margin: 0px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-family: 'sans-serif';
 }
 
-@media (orientation: portrait) {
-  body {
-    font-size: 2vh;
-    height: 100vh;
-    width: 100vw;
-    padding: 0px;
-    margin: 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-family: 'sans-serif';
-  }
-   section{
-    display: flex;
-    overflow-y: auto;
-    align-items: center;
-    justify-content: start;
-    flex-direction: column;
-    background-color: blue;
-    width: 96vw;
-  }
-  section#commits {
-    height: 20%;
-    margin: 0 0 2vw 0;
-  }
-  section#main {
-    height: 80%;
-    margin: 2vw 0;
-  }
+ section{
+	display: flex;
+	overflow-y: auto;
+	align-items: center;
+	justify-content: start;
+	flex-direction: column;
+	background-color: blue;
+	width: 96vw;
+	height: 96vh;
 }
 
 p {
-  color: white;
+	color: white;
 }
 
 section {
-  background: rgba(0,0,0,0.9);
+  background: rgba(0,0,0,0.8);
+  border: 1px solid white;
 }
 
 section#commits {

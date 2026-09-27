@@ -1,24 +1,58 @@
+@font-face {
+	font-family: 'VT323';
+	src: url('./fonts/VT323.ttf');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
 body {
 	height: 100vh;
 	width: 100vw;
-	display: flex;
 	margin: 0px;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	background-color: grey;
-	background-image: url("./images/background.gif");
+	padding: 0px;
+	background-color: black;
 }
 
 main {
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	margin: 0px;
+	padding: 0px;
 	display: flex;
-	flex-wrap: column;	
+	flex-direction: row;
+	background-color: black;
+	overflow-y: hidden;
 }
+
+#div-computer {
+	display: inline-flex;
+	position: relative;
+}
+
+#display {
+  position: absolute;
+  inset: 0;
+  display: flex;
+	flex-direction: column;
+	gap: 0px 0px;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  transform: rotate(-1deg) translate(2%, -25%);
+	font-family: "VT323";
+	font-size: 3dvh
+
+}
+
 p {
-	font-size: 40px;
+	height: 0px;
+	margin: 14px;
 	color: white;
 }
 
-span {
-	color: #99ff99; 
+#pill {
+	-webkit-mask-image: linear-gradient(to right, #000 70%, transparent 100%);
+	mask-image: linear-gradient(to right, #000 70%, transparent 100%);
 }
