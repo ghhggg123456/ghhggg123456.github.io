@@ -6,54 +6,85 @@
 	font-display: swap;
 }
 
-body {
-	height: 100vh;
-	width: 100vw;
-	margin: 0px;
-	padding: 0px;
-	background-color: black;
-	overflow: hidden;
+@media(orientation: portrait) {
+	body>#landscape{display:none}
+	body, body>* {
+		margin: 0px;
+		padding: 0px;
+		height: 100dvh;
+		width: 100dvw;
+		background: black;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	img {
+		display: block;
+		width: 100dvw
+	}
+
+	p {
+		color: white;
+		font-family: "VT323";
+		font-size: 5dvw;
+	}
+
+	#computer {
+		position: relative;
+	}
+	#computer>div {
+		display: flex;
+		flex-direction: column;
+		gap: 0px;
+		align-items: center;
+		position: absolute;
+		left: 52%;
+		top: 28%;
+		transform: rotate(-1deg) translate(-50%, -50%);;
+	}
+	#computer>div>p {
+		text-align: center;
+		margin: 0px;
+		padding: 0px;
+	}
 }
 
-main {
-	position: absolute;
-	height: 100vh;
-	width: 100vw;
-	margin: 0px;
-	padding: 0px;
-	display: flex;
-	flex-direction: row;
-	background-color: black;
-	overflow: hidden;
-}
+@media(orientation: landscape) {
+	body>#portrait{display:none}
+	body, body>* {
+		margin: 0px;
+		padding: 0px;
+		height: 100dvh;
+		width: 100dvw;
+		background: black;
+	}
 
-#div-computer {
-	display: inline-flex;
-	position: relative;
-}
+	p {
+		color: white;
+		font-family: "VT323";
+		font-size: 3dvh;
+		text-align: center;
+		margin: 0px;
+	}
 
-#display {
-  position: absolute;
-  inset: 0;
-  display: flex;
-	flex-direction: column;
-	gap: 0px 0px;
-  align-items: center;
-  justify-content: center;
-  pointer-events: none;
-  transform: rotate(-1deg) translate(2%, -25%);
-	font-family: "VT323";
-	font-size: 3dvh
+	h1 {
+		color: white;
+		font-family: "VT323";
+		font-size: 6dvh;
+		text-align: center;
+	}
+	
+	header {
+		padding: 1vh;
+		background: url("./images/10.jpg") center / cover no-repeat;
+	}
 
-}
-
-p {
-	height: 0px;
-	margin: 1.2dvh;
-	color: white;
-}
-
-#pill {
-	-webkit-mask-image: linear-gradient(to right, #000 70%, transparent 100%);
-	mask-image: linear-gradient(to right, #000 70%, transparent 100%);
+	main {
+		margin: 20vh;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
 }
